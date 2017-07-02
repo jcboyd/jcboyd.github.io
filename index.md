@@ -10,11 +10,11 @@ I am a PhD student at the [Centre for Computational Biology](http://cbio.ensmp.f
 
 ## Research interests
 
-I am most interested in machine learning and its applications. At CBIO, I am researching ways of improving [image-based drug screens](https://en.wikipedia.org/wiki/High-content_screening) using deep and transfer learning.
+I am most interested in machine learning and its applications. At CBIO I am researching ways of improving [image-based drug screens](https://en.wikipedia.org/wiki/High-content_screening) using deep and transfer learning.
 
 ## Biography
 
-I obtained my bachelor degrees in Mathematics and Information Technology from [Queensland University of Technology](https://www.qut.edu.au/) (QUT) in Brisbane, Australia. After some years in the engineering industry, I pursued a masters in computer science from [EPFL](https://www.epfl.ch/) in Lausanne, Switzerland.
+I obtained my bachelor degrees in Mathematics and Information Technology from [Queensland University of Technology](https://www.qut.edu.au/) (QUT) in Brisbane, Australia. After some years in the engineering industry, I pursued a masters in computer science from [École polytechnique fédérale de Lausanne](https://www.epfl.ch/) (EPFL) in Lausanne, Switzerland.
 
 ## Contact
 
