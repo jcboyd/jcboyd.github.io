@@ -10,7 +10,7 @@ I am a PhD student at the [Centre for Computational Biology](http://cbio.ensmp.f
 
 ## Research interests
 
-I am most interested in machine learning and its applications. At CBIO I am researching ways of improving [image-based drug screens](https://en.wikipedia.org/wiki/High-content_screening) using deep and transfer learning.
+I am most interested in machine learning and its applications. At CBIO I am researching ways of improving the analysis of [image-based drug screen](https://en.wikipedia.org/wiki/High-content_screening) data using deep and transfer learning.
 
 ## Biography
 

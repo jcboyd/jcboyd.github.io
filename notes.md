@@ -16,7 +16,7 @@ Last chance bio (biology) is my attempt at summarising the basics of molecular a
 
 ## Last chance lit
 
-Last chance lit (literature) contains the summaries of interesting articles I have come across throughout my research. It consists mostly of papers on high content screening or deep/transfer learning. I hope that one day it will form the basis of a beautiful dissertation.
+[Last chance lit](/assets/lastchancelit/main.pdf) (literature) contains the summaries of interesting articles I have come across throughout my research. It consists mostly of papers on high content screening or deep/transfer learning. I hope that one day it will form the basis of a beautiful dissertation.
 
 ## Misc
 
