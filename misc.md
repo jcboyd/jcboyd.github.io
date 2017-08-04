@@ -8,4 +8,4 @@ title: Miscellaneous
 
 * My [gists](https://gist.github.com/jcboyd/).
 
-* Some high content screening analysis on [spot detection](/assets/hcs/spot_detection_MDA231.html), [phenotype profiling](/assets/hcs/phenotype_profiling.html), and [class discovery](/assets/hcs/class_discovery.html).
+* Some high content screening analysis on [DNA double-strand break detection](/assets/hcs/double_strand_break_detection.html), [phenotype profiling](/assets/hcs/phenotype_profiling.html), and [phenotypic class discovery](/assets/hcs/class_discovery.html).
