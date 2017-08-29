@@ -20,4 +20,4 @@ Last chance bio (biology) is my attempt at summarising the basics of molecular a
 
 ## Misc
 
-I also like to take notes on important software like [git](https://github.com/jcboyd/git-notes/blob/master/git-notes.sh), [Bash](https://github.com/jcboyd/bash-notes/blob/master/notes.sh), or [C++](https://github.com/jcboyd/cpp-notes/blob/master/Notes.cpp).
+I also like to take notes on important software like [git](https://github.com/jcboyd/git-notes/blob/master/git-notes.sh), [Bash](https://github.com/jcboyd/bash-notes/blob/master/notes.sh), [C++](https://github.com/jcboyd/cpp-notes/blob/master/Notes.cpp), or [Python](https://github.com/jcboyd/python-notes).
