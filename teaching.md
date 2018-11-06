@@ -4,6 +4,8 @@ permalink: /teaching/
 title: Teaching activities
 ---
 
+* **(November, 2018)** I presented my deep learning workshop in lecture form to 2nd year students as part of PSL course *Génomique et Bioinformatique: Une Introduction*.
+
 * **(March, 2018)** I was teaching assistant during the workshops of [Large-Scale Machine Learning and Data Mining](http://members.cbio.mines-paristech.fr/~jvert/svn/lsml/lsml18/) at MINES Paristech. I also created the workshop on [stochastic gradient descent](https://jcboyd.github.io/assets/lsml2018/stochastic_gradient_descent.html).
 
 * **(October, 2017)** My deep learning workshop will feature in PSL course *Introduction to Bioinformatics and Genomics* with a [new branch for cell data](https://github.com/jcboyd/deep-learning-workshop/tree/cell-data).
