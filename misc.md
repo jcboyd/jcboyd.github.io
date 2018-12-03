@@ -8,3 +8,4 @@ title: Miscellaneous
 
 * My [gists](https://gist.github.com/jcboyd/).
 
+* Journal clubs given at CBIO: [28/11/17](/assets/journal_clubs/main_281117.pdf), [15/05/18](/assets/journal_clubs/main_150518.pdf).
