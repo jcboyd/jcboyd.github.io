@@ -1,0 +1,128 @@
+@media (max-width: 320px) {
+  html {
+    font-size: 5.88235px;
+  }
+}
+@media (min-width: 321px) and (max-width: 420px) {
+  html {
+    font-size: 6.66667px;
+  }
+}
+@media (min-width: 421px) and (max-width: 640px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  font: "Century Gothic", Futura, sans-serif;*/
+  margin: 1rem;
+  background: #ffcccc;
+}
+
+h1 {
+  font: 5rem "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  font: 1rem "Courier New", Courier, monospace;
+  background: #fff;
+  border: 0.4rem solid #000;
+  float: left;
+  font-size: 12rem;
+  font-weight: bold;
+/*  line-height: 34px;*/
+/*  height: 134px;*/
+  height: 15rem;
+  width: 15rem;
+  border-radius: 0.6rem;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  margin-bottom: 0.1rem;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+/*  width: 134px;*/
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-board {
+  background: #ff6666;
+  width: 45.6rem;
+  height: 45.6rem;
+  border-radius: 0.6rem;
+  /*border: 1rem solid;*/
+  padding:0;
+  margin:0;
+  border-color: #7C0909;
+  box-sizing: border-box;
+}
+
+.game {
+/*  display: flex;
+  flex-direction: row;*/
+  margin: auto;
+/*  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  width: 47.6rem;
+  /*  border-radius: 0.6rem;
+  border: 1rem solid;
+  border-color: #7C0909;*/
+}
+
+/*.game-info {
+  margin-left: 20px;
+}*/
+
+.square {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  /*transform: scale(1.5);*/
+}
+
+.square:hover {
+  background-color: #e6e6e6;
+  /*transform: scale(1.5);*/
+  /*color: #ffcccc;*/
+}

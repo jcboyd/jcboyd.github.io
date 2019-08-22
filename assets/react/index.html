@@ -2,79 +2,33 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>AlphaToe</title>
-        <style>
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-}
-
-ol, ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
-}
-        </style>
+        <title>AlphaXO</title>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
 <body>
-<a href="https://github.com/jcboyd/alphapentago"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-<div id="errors" style="
+<a href="https://github.com/jcboyd/alphapentago">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+</a>
+<h1>alpha_xo</h1>
+<!-- <div id="errors" style="
     background: #c00;
     color: #fff;
     display: none;
     margin: -20px -20px 20px;
     padding: 20px;
     white-space: pre-wrap;
-"></div>
+"></div> -->
 <div id="root"></div>
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.min.js"></script> -->
 <script>
 
 function Square(props) {
 
-    return(React.createElement('button',
+    return(React.createElement('div',
         {'className' : 'square', 'onClick' : props.onClick}, props.value));
 }
 
@@ -98,18 +52,86 @@ class Board extends React.Component {
         }
     }
 
+function createModel() {
+    // Create a sequential model
+    const model = tf.sequential(); 
+
+    // Add a single hidden layer
+    model.add(tf.layers.dense({inputShape: [9], units: 32, activation: 'relu'}));
+
+    // Add an output layer
+    model.add(tf.layers.dense({units: 9, activation: 'softmax'}));
+
+    model.compile({
+        optimizer: tf.train.adam(),
+        loss: tf.losses.softmaxCrossEntropy,
+        metrics: ['accuracy'],
+    });
+
+    return model;
+}
+
+function zero_out(probs, board) {
+
+    for(let i = 0; i < board.length; i++) {
+        if(board[i] != 0) {
+            probs[i] = 0;
+        } else {
+            probs[i] += 1e-7;
+        }
+    }
+    return probs;
+}
+
+function board_to_numeric(board) {
+    value_dict = {'x' : 1, 'o' : -1, null : 0};
+    return board.map(x => value_dict[x]);
+}
+
 class Game extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            history : [{squares : Array(9).fill(null)}], stepNumber : 0, xIsNext : true}
+            history : [{squares : Array(9).fill(null)}],
+                        stepNumber : 0, xIsNext : true, neuralNext : true}
+        this.neural_net = createModel();
+
+        // this.neural_net = tf.loadLayersModel('https://jcboyd.github.io/assets/react/model.json');
+
     }
 
-    handleClick(i) {
+    getAgentMove() {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1]
         const squares = current.squares.slice()  // first create copy
+
+        if (calculateWinner(squares)) {
+            return;
+        }
+
+        var board = board_to_numeric(squares);
+
+        let inputTensor = tf.tensor2d(board, [1, board.length]);
+
+        let pred = this.neural_net.predict(inputTensor).dataSync();
+
+        pred = zero_out(pred, board);
+        pred = tf.argMax(pred).dataSync()[0];
+        return pred;
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+
+        if(this.state.neuralNext) {
+            this.makeMove(this.getAgentMove());
+        }
+    }
+
+    makeMove(i) {
+        let history = this.state.history.slice(0, this.state.stepNumber + 1);
+        let current = history[history.length - 1]
+        let squares = current.squares.slice()  // first create copy
 
         if (calculateWinner(squares) || squares[i]) {
             return;
@@ -118,7 +140,8 @@ class Game extends React.Component {
         squares[i] = this.state.xIsNext ? 'x' : 'o'
         this.setState({history : history.concat([{squares : squares}]),
                        stepNumber : history.length,
-                       xIsNext : !this.state.xIsNext})
+                       xIsNext : !this.state.xIsNext,
+                       neuralNext : !this.state.neuralNext});
     }
 
     jumpTo(step) {
@@ -133,7 +156,8 @@ class Game extends React.Component {
         const moves = history.map((step, move) => {
             const desc = move ? 'Go to move #' + move : 'Go to game state';
             return React.createElement('li', {key : move}, 
-                       React.createElement('button', {onClick : () => this.jumpTo(move)}, desc));
+                       React.createElement('div', 
+                           {onClick : () => this.jumpTo(move)}, desc));
         })
 
         let status;
@@ -147,16 +171,12 @@ class Game extends React.Component {
         return React.createElement('div', {className : 'game'},
                     React.createElement('div', {className : 'game-board'},
                         React.createElement(Board, {squares : current.squares,
-                            onClick : (i) => this.handleClick(i)})),
-                    React.createElement('div', {className : 'game-info'},
-                        React.createElement('div', {}, status),
-                        React.createElement('ol', {}, moves)));
+                            onClick : (i) => this.makeMove(i)})));//,
+                    // React.createElement('div', {className : 'game-info'},
+                    //     React.createElement('div', {}, status),
+                    //     React.createElement('ol', {}, moves)));
     }
 }
-
-ReactDOM.render(
-    React.createElement(Game), document.getElementById('root')
-);
 
 function calculateWinner(squares) {
     const lines = [
@@ -177,6 +197,13 @@ function calculateWinner(squares) {
     }
     return null;
 }
+
+game = ReactDOM.render(
+    React.createElement(Game), document.getElementById('root')
+);
+
+game.makeMove(game.getAgentMove());
+
 </script>
 </body>
 </html>
