@@ -1,0 +1,206 @@
+@media (max-width: 320px) {
+  html {
+    font-size: 5.88235px;
+  }
+}
+@media (min-width: 321px) and (max-width: 420px) {
+  html {
+    font-size: 6.66667px;
+  }
+}
+@media (min-width: 421px) and (max-width: 640px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+body {
+  background: #ffeeee;
+  color: #ff6666;
+  text-align: center;
+}
+
+h1 {
+  font: 5rem "Courier New", Courier, monospace;
+}
+
+p {
+  font: 2rem "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+#top {
+  margin: 0 auto;
+  width: 107.6rem;
+}
+
+.game {
+  width: 107.6rem;
+  display: inline-block
+}
+
+.network-diagram {
+  width: 30rem;
+  height: 47.6rem;
+  float: left;
+  opacity:1;
+  transition:opacity 1000ms;
+}
+
+.node {
+  fill: #ffeeee;
+  stroke: #ffcccc;
+  stroke-width: 1;
+  display: inline-block;
+}
+
+.active-node {
+  fill: #ffcccc;
+  stroke: #ffcccc;
+  stroke-width: 1;
+  display: inline-block;
+}
+
+.connection {
+  stroke: #ffcccc;
+  stroke-width: 0.5;
+}
+
+.game-board {
+  background: #ffcccc;
+  border-radius: 0.6rem;
+  width: 47.6rem;
+  height: 47.6rem;
+  border: 1rem solid;
+  border-color: #ffcccc;
+  padding:0;
+  box-sizing: border-box;
+  float: left
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  font: 12rem "Courier New", Courier, monospace;
+  color: #ff6666;
+  background: #fff;
+  float: left;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 0.6rem;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  margin-bottom: 0.1rem;
+  padding: 0;
+  text-align: center;
+  border: 0;
+}
+
+.game-info {
+  width: 30rem;
+  font: 2rem "Courier New", Courier, monospace;
+  float: left;
+}
+
+.forward-back {
+  font: 2rem "Courier New", Courier, monospace;
+  color: #ff6666;
+  background-color: #ffffff;
+  border: none;
+  height: 3rem;
+  width: 5rem;
+  border-radius: 0.6rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.forward-back:hover {
+  background-color: #f6f6f6;
+}
+
+.new-game {
+  font: 1.5rem "Courier New", Courier, monospace;
+  color: #ff6666;
+  background-color: #ffffff;
+  border: none;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 0.6rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.new-game:hover {
+  background-color: #f6f6f6;
+}
+
+.switch-diagram:hover {
+  background-color: #f6f6f6;
+}
+
+.switch-diagram {
+  font: 1.5rem "Courier New", Courier, monospace;
+  color: #ff6666;
+  background-color: #ffffff;
+  border: none;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 0.6rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.square {
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+.square:hover {
+  background-color: #f6f6f6;
+}
