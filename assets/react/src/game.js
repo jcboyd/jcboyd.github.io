@@ -14,19 +14,19 @@ class NetworkDiagram extends React.Component {
         this.layer_1_coords = []
 
         for (var i = 0; i < 9; i++) {
-            this.layer_1_coords.push(Array(i, 30, 78 + i * 40));
+            this.layer_1_coords.push(Array(i, 78 + i * 40, 30));
         }
 
         this.layer_2_coords = []
 
         for (var i = 0; i < 16; i++) {
-            this.layer_2_coords.push(Array(i, 140, 15 + i * 30));
+            this.layer_2_coords.push(Array(i, 15 + i * 30, 140));
         }
 
         this.layer_3_coords = []
 
         for (var i = 0; i < 9; i++) {
-            this.layer_3_coords.push(Array(i, 250, 78 + i * 40));
+            this.layer_3_coords.push(Array(i, 78 + i * 40, 250));
         }
 
         this.connections_1_2 = [];
@@ -34,10 +34,10 @@ class NetworkDiagram extends React.Component {
         for (var i = 0; i < this.layer_1_coords.length; i++) {
             for (var j = 0; j < this.layer_2_coords.length; j++) {
                 this.connections_1_2.push(Array(
-                    this.layer_1_coords[i][1] + node_radius,
-                    this.layer_1_coords[i][2],
-                    this.layer_2_coords[j][1] - node_radius,
-                    this.layer_2_coords[j][2]));
+                    this.layer_1_coords[i][1],
+                    this.layer_1_coords[i][2] + node_radius,
+                    this.layer_2_coords[j][1],
+                    this.layer_2_coords[j][2] - node_radius));
             }
         }
 
@@ -46,10 +46,10 @@ class NetworkDiagram extends React.Component {
         for (var i = 0; i < this.layer_2_coords.length; i++) {
             for (var j = 0; j < this.layer_3_coords.length; j++) {
                 this.connections_2_3.push(Array(
-                    this.layer_2_coords[i][1] + node_radius,
-                    this.layer_2_coords[i][2],
-                    this.layer_3_coords[j][1] - node_radius,
-                    this.layer_3_coords[j][2]));
+                    this.layer_2_coords[i][1],
+                    this.layer_2_coords[i][2] + node_radius,
+                    this.layer_3_coords[j][1],
+                    this.layer_3_coords[j][2] - node_radius));
             }
         }
     }
@@ -130,11 +130,11 @@ function calculateWinner(squares) {
     return null;
 }
 
-async function getNet() {
-    var url = 'https://jcboyd.github.io/assets/react/tfjs_target_dir/model.json';
-    var neural_net = await tf.loadLayersModel(url);
-    return neural_net;
-}
+// async function getNet() {
+//     var url = 'https://jcboyd.github.io/assets/react/tfjs_target_dir/model.json';
+//     var neural_net = await tf.loadLayersModel(url);
+//     return neural_net;
+// }
 
 class Game extends React.Component {
 
@@ -263,28 +263,28 @@ class Game extends React.Component {
         }
 
         return React.createElement('div', {className : 'game'},
+                    React.createElement('div', {className : 'game-info'},
+                        // React.createElement('div', {}, status)),
+                        React.createElement('button', {
+                            className : 'forward-back',
+                            onClick : () => this.goBack()}, '<'),
+                        React.createElement('button', {
+                            className : 'forward-back',
+                            onClick : () => this.goForward()}, '>'),
+                        React.createElement('button', {
+                            className : 'new-game',
+                            onClick : () => this.newGame()}, 'New Game'),
+                        React.createElement('button', {
+                            className : 'switch-diagram',
+                            onClick : () => this.switchDiagram()}, 'Toggle Net')),
+                    React.createElement(Board, {
+                        squares : current.squares,
+                        onClick : (i) => this.makeMove(i)}),
                     React.createElement(NetworkDiagram, {
                         display : this.state.displayDiagram,
                         nodes_layer1 : this.state.nodes_layer1,
                         nodes_layer2 : this.state.nodes_layer2,
                         nodes_layer3 : this.state.nodes_layer3}),
-                    React.createElement(Board, { 
-                        squares : current.squares,
-                        onClick : (i) => this.makeMove(i)}),
-                    React.createElement('div', {className : 'game-info'},
-                        React.createElement('div', {}, status)),
-                        React.createElement('button', {
-                            className : 'forward-back',
-                            onClick : () => this.goBack()}, '<'),
-                        React.createElement('button', {
-                            className : 'new-game',
-                            onClick : () => this.newGame()}, 'New Game'),
-                        React.createElement('button', {
-                            className : 'forward-back',
-                            onClick : () => this.goForward()}, '>'),
-                        React.createElement('button', {
-                            className : 'switch-diagram',
-                            onClick : () => this.switchDiagram()}, 'Toggle Net'),
-                        );
+                    );
     }
 }

@@ -37,6 +37,7 @@ body {
 
 h1 {
   font: 5rem "Courier New", Courier, monospace;
+  margin-top: 2rem;
 }
 
 p {
@@ -46,18 +47,19 @@ p {
 
 #top {
   margin: 0 auto;
-  width: 107.6rem;
+  width: 47.6rem;
 }
 
 .game {
-  width: 107.6rem;
-  display: inline-block
+  width: 47.6rem;
+  display: inline-block;
+  /*margin: 0 auto;*/
 }
 
 .network-diagram {
-  width: 30rem;
-  height: 47.6rem;
-  float: left;
+  width: 47.6rem;
+  height: 30rem;
+  /*float: left;*/
   opacity:1;
   transition:opacity 1000ms;
 }
@@ -117,9 +119,9 @@ p {
 }
 
 .game-info {
-  width: 30rem;
+  width: 47.6rem;
   font: 2rem "Courier New", Courier, monospace;
-  float: left;
+  /*float: left;*/
 }
 
 .forward-back {

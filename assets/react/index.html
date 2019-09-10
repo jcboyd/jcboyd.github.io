@@ -6,13 +6,13 @@
         <link rel="stylesheet" type="text/css" href="src/index.css">
     </head>
 <body>
-<a href="https://github.com/jcboyd/alphapentago">
+<!-- <a href="https://github.com/jcboyd/alphapentago">
     <img style="position: absolute; top: 0; right: 0; border: 0;"src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
-</a>
+</a> -->
 <h1>alpha_xo</h1>
 <div id="top">
+<!--     <p>Play noughts and crosses against a neural net!</p> -->
     <div id="root"></div>
-    <p>Play noughts and crosses against a neural net!</p>
 </div>
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
@@ -24,8 +24,7 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.1.0/math.min.js"></script> -->
 <script>
 
-
-async function getNeuralNet() {
+async function loadGame() {
     url = 'https://jcboyd.github.io/assets/react/tfjs_target_dir/model.json';
     const net = await tf.loadLayersModel(url);
     game = ReactDOM.render(
@@ -37,7 +36,7 @@ async function getNeuralNet() {
     game.updateNodes(board, hidden, pred);
 }
 
-getNeuralNet();
+loadGame();
 
 // const [board, hidden, pred] = game.getAgentMove();
 // game.makeMove(pred);

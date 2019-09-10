@@ -29,7 +29,7 @@ function createModel() {
 function zeroOut(probs, board) {
 
     for(let i = 0; i < board.length; i++) {
-        if(board[i] != 0) { probs[i] = 0; } 
+        if(board[i] != 0) { probs[i] = 0; }
         else { probs[i] += 1e-7; }
     }
     return probs;
@@ -40,8 +40,8 @@ function boardToNumeric(board) {
     return board.map(x => value_dict[x]);
 }
 
-async function getNeuralNet() {
-    url = 'https://jcboyd.github.io/assets/react/tfjs_target_dir/model.json';
-    const net = await tf.loadLayersModel(url);
-    return net;
-}
+// async function getNeuralNet() {
+//     url = 'https://jcboyd.github.io/assets/react/tfjs_target_dir/model.json';
+//     const net = await tf.loadLayersModel(url);
+//     return net;
+// }
