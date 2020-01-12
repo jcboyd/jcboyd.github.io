@@ -4,6 +4,8 @@ permalink: /teaching/
 title: Teaching activities
 ---
 
+* **(October, 2019)** I gave an updated version of my workshop again for PSL course *Génomique et Bioinformatique: Une Introduction*.
+
 * **(November, 2018)** I presented the introductory workshop at MINES Paristech course [*Deep Learning For Image Analysis*](https://github.com/ThomasWalter/DeepLearningForImageAnalysis)
 
 * **(November, 2018)** I presented my deep learning workshop in lecture form to 2nd year students as part of PSL course *Génomique et Bioinformatique: Une Introduction*.

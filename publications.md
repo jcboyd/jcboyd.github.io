@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 ---
 
-* Boyd, J., Gouveia, Z., Perez, F., & Walter, T. (2020, April). [Experimentally-generated ground truth for tracking lymphocyte populations in an image-based immunotherapy screen]. In 2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI 2020). IEEE. (in press)
+* Boyd, J., Gouveia, Z., Perez, F., & Walter, T. (2020, April). Experimentally-generated ground truth for detecting lymphocytes in an image-based immunotherapy screen. In 2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI 2020). IEEE. (in press)
 
 * Boyd, J. C., Pinheiro, A., Del Nery, E., Reyal, F., & Walter, T. (2019). [Domain-invariant features for mechanism of action prediction in a multi-cell-line drug screen](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz774/5586889). Bioinformatics.
 
