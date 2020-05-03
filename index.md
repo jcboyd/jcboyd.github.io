@@ -10,7 +10,7 @@ I am a PhD student at the [Centre for Computational Biology](http://cbio.ensmp.f
 
 ## Research interests
 
-I am most interested in machine learning and its applications. At CBIO I am researching ways of improving [high content screening](https://en.wikipedia.org/wiki/High-content_screening) analysis using deep learning.
+I am most interested in machine learning and its applications. At CBIO I am researching ways of improving [high content](https://en.wikipedia.org/wiki/High-content_screening) analysis using deep learning.
 
 ## Biography
 
@@ -18,6 +18,6 @@ I obtained my bachelor degrees in Mathematics and Information Technology from [Q
 
 ## Contact
 
-Institut Curie <br/>
-26 Rue d'Ulm, 75005 Paris, France <br/>
-Email: joseph(dot)boyd(at)curie(dot)fr
+MINES ParisTech <br/>
+60 Boulevard Saint-Michel, 75272 Paris <br/>
+Email: joseph(dot)boyd(at)mines-paristech(dot)fr
