@@ -1,8 +1,8 @@
 - title: "Publications"
   href: "/publications/"
 
-- title: "Notes"
-  href: "/notes/"
+#- title: "Notes"
+#  href: "/notes/"
 
 - title: "Teaching"
   href: "/teaching/"
@@ -10,5 +10,5 @@
 - title: "CV"
   href: "/cv/"
 
-- title: "Misc"
-  href: "/misc/"
+#- title: "Misc"
+#  href: "/misc/"

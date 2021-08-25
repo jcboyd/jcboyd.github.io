@@ -14,7 +14,7 @@ I am most interested in deep learning and its applications. At MICS I am researc
 
 ## Biography
 
-I obtained my bachelor degrees in Mathematics and Information Technology from [Queensland University of Technology](https://www.qut.edu.au/) (QUT) in Brisbane, Australia. After some years in the engineering industry, I pursued a masters in computer science from [École polytechnique fédérale de Lausanne](https://www.epfl.ch/) (EPFL) in Lausanne, Switzerland. I did my PhD at the [Centre for Computational Biology](http://cbio.ensmp.fr/) (CBIO) at [MINES Paristech](http://www.mines-paristech.fr/), affiliated with the [Institut Curie](http://www.institut-curie.org/) under the supervision of [Thomas Walter](http://members.cbio.mines-paristech.fr/~twalter/).
+I obtained my bachelor degrees in Mathematics and Information Technology from [Queensland University of Technology](https://www.qut.edu.au/) (QUT) in Brisbane, Australia. After some years in the engineering industry, I pursued a masters in computer science from [École polytechnique fédérale de Lausanne](https://www.epfl.ch/) (EPFL) in Lausanne, Switzerland. I did my PhD at the [Centre for Computational Biology](http://cbio.ensmp.fr/) (CBIO) at [MINES Paristech](http://www.mines-paristech.fr/), affiliated with the [Institut Curie](http://www.institut-curie.org/) under the supervision of [Thomas Walter](https://thomaswalter.github.io/).
 
 ## Contact
 
