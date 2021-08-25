@@ -10,7 +10,7 @@ I am a postdoc at the [MICS](http://mics.centralesupelec.fr/) lab at [CentraleSu
 
 ## Research interests
 
-I am most interested in deep learning and its applications. At MICS I am researching ways of improving [high content](https://en.wikipedia.org/wiki/High-content_screening) analysis using deep learning.
+I am most interested in deep learning and its applications.
 
 ## Biography
 
