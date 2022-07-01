@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching activities
 ---
 
-* **(December 2021-March, 2022)** I ran the practical sessions for CentraleSupelec course *VIC - Vision par Ordinateur*, including a vehicle detection assignment hosted on [Kaggle](https://www.kaggle.com/competitions/vic-assignment-2/)
+* **(December 2021-March, 2022)** I ran the practical sessions for CentraleSupélec course *VIC - Vision par Ordinateur*, including a vehicle detection assignment hosted on [Kaggle](https://www.kaggle.com/competitions/vic-assignment-2/)
 
 * **(October, 2019)** I gave an updated version of my workshop again for PSL course *Génomique et Bioinformatique: Une Introduction*.
 
