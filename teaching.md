@@ -4,6 +4,8 @@ permalink: /teaching/
 title: Teaching activities
 ---
 
+* **(December 2021-March, 2022)** I ran the practical sessions for CentraleSupelec course *VIC - Vision par Ordinateur*, including a vehicle detection assignment hosted on [Kaggle](https://www.kaggle.com/competitions/vic-assignment-2/)
+
 * **(October, 2019)** I gave an updated version of my workshop again for PSL course *Génomique et Bioinformatique: Une Introduction*.
 
 * **(November, 2018)** I presented the introductory workshop at MINES ParisTech course [*Deep Learning For Image Analysis*](https://github.com/ThomasWalter/DeepLearningForImageAnalysis)
