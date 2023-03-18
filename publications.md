@@ -4,7 +4,9 @@ permalink: /publications/
 title: Publications
 ---
 
-* Boyd, J. et al. (2022). Region-guided CycleGANs for Stain Transfer in Whole Slide Images. International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2022. (in press)
+* Fillioux, L., Boyd, J. et al. (2023). Structured State Space Models for Multiple Instance Learning in Digital Pathology. (submitted)
+
+* Boyd, J. et al. (2022). [Region-guided CycleGANs for Stain Transfer in Whole Slide Images](https://link.springer.com/chapter/10.1007/978-3-031-16434-7_35). International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2022.
 
 * Boyd, J. et al. (2021). [Self-Supervised Representation Learning using Visual Field Expansion on Digital Pathology](https://openaccess.thecvf.com/content/ICCV2021W/CDPath/papers/Boyd_Self-Supervised_Representation_Learning_Using_Visual_Field_Expansion_on_Digital_Pathology_ICCVW_2021_paper.pdf). In Proceedings of the IEEE/CVF International Conference on Computer Vision, pp. 639-647.
 
