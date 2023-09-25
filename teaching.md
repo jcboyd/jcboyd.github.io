@@ -4,11 +4,11 @@ permalink: /teaching/
 title: Teaching activities
 ---
 
-* **(December 2022)** I gave a [masterclass in deep learning and medical applications](https://alumni.gustaveroussy.fr/fr/event/masterclass-artificial-intelligence-medical-physics-radiation-oncology/2022/12/12/14) at Institut Gustave Roussy.
+* **(December, 2022)** I gave a [masterclass in deep learning and medical applications](https://alumni.gustaveroussy.fr/fr/event/masterclass-artificial-intelligence-medical-physics-radiation-oncology/2022/12/12/14) at Institut Gustave Roussy.
 
-* **(November 2022-March, 2023)** I ran the practical sessions for CentraleSupélec course *VIC - Vision par Ordinateur*, including a vehicle detection assignment hosted on [Kaggle](https://www.kaggle.com/competitions/vic-kaggle-challenge-2023)
+* **(November 2022-March, 2023)** I again ran the practical sessions for CentraleSupélec course *VIC - Vision par Ordinateur*, including a vehicle detection assignment hosted on [Kaggle](https://www.kaggle.com/competitions/vic-kaggle-challenge-2023)
 
-* **(October 2022)** I gave a guest lecture on clustering for CentraleSupélec course *Foundations of Machine Learning*. The slides are available [here](https://docs.google.com/presentation/d/1UvwuRvWl2mH2z-2gtOo-pMIa8rF1szJY/edit?usp=sharing&ouid=115436535423316025626&rtpof=true&sd=true).
+* **(October, 2022)** I gave a guest lecture on clustering for CentraleSupélec course *Foundations of Machine Learning*. The slides are available [here](https://docs.google.com/presentation/d/1UvwuRvWl2mH2z-2gtOo-pMIa8rF1szJY/edit?usp=sharing&ouid=115436535423316025626&rtpof=true&sd=true).
 
 * **(December 2021-March, 2022)** I ran the practical sessions for CentraleSupélec course *VIC - Vision par Ordinateur*, including a vehicle detection assignment hosted on [Kaggle](https://www.kaggle.com/competitions/vic-assignment-2/)
 
