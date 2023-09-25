@@ -4,7 +4,9 @@ permalink: /publications/
 title: Publications
 ---
 
-* Fillioux, L., Boyd, J. et al. (2023). Structured State Space Models for Multiple Instance Learning in Digital Pathology. (submitted)
+* Fillioux, L., Boyd, J. et al. (2023). [Structured State Space Models for Multiple Instance Learning in Digital Pathology](https://arxiv.org/abs/2306.15789). International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2023.
+
+* Dahan, C. et al. (2022). [Artifact Removal in Histopathology Images](https://arxiv.org/abs/2211.16161). ACML 2022, ML4MI workshop.
 
 * Boyd, J. et al. (2022). [Region-guided CycleGANs for Stain Transfer in Whole Slide Images](https://link.springer.com/chapter/10.1007/978-3-031-16434-7_35). International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2022.
 
